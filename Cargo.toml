@@ -1,0 +1,12 @@
+[package]
+name = "AnticheatCore"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "Anticheat"
+crate-type = ["cdylib"]
+
+[dependencies]
+dirs = "5.0"
+winapi = { version = "0.3", features = ["winuser", "tlhelp32", "handleapi", "minwindef", "libloaderapi", "winnt", "wintrust", "wincrypt"] }
